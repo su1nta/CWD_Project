@@ -18,6 +18,7 @@
 	height:50px;
 	width:30%;
 }
+
 #logoname{
 	top:50%;
 	display:block;
@@ -47,7 +48,6 @@
 	height:30px;
 	width:90%;
 }
-
 
 ::placeholder{
 	font-family:century gothic;
@@ -134,10 +134,17 @@
 	background:#c1c1c1;
 }
 
+#banner #bannerpic{
+	display:block;
+	margin:5px auto;
+	height:200px;
+	width:100%;
+}
+
 .category_heading{
 	display:block;
 	margin: 5px auto;
-	background:#f7f7f7;
+	background:#1C2B2D;
 	height:25px;
 	width:75%;
 }
@@ -149,7 +156,7 @@
 	max-height:330px;
 	width:75%;
 	overflow-x:auto;
-	background:#f7f7f7;
+	padding:5px;
 }
 
 .category_item{
@@ -158,7 +165,24 @@
 	float:left;
 	height:300px;
 	min-width:300px;
-	background:black;	
+	background:#f6f6f6;
+}
+
+.cat_item_link{
+	text-decoration:none;
+}
+
+.category_item img:hover{
+	margin:20px;
+	transform: scale(1.1);
+}
+
+.item_details{
+	font-family:century gothic;
+	font-size:25px;
+	color:#1C2B2D;
+	align:left;
+	padding:10px 0px 0px 10px;
 }
 
 #footer{
