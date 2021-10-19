@@ -1,0 +1,97 @@
+*{margin:0px;}
+
+#wrapper{
+	height:auto;
+	width:100%;
+}
+
+#header{
+	display:block;
+	height:50px;
+	width:100%;
+	background:#1f6f8b;
+}
+
+#header #logo{
+	float:left;
+	display:block;
+	height:50px;
+	width:30px;
+}
+#logoname{
+	display:block;
+	color:white;
+	font-family:century gothic;
+	font-weight:bold;
+	font-size:25px;
+	padding:8px 0px 0px 15px;
+}
+
+#logolink{
+	text-decoration:none;
+}
+
+#usericon{
+	float:right;
+	height:25px;
+	width:25px;
+	padding:12.5px 15px 0px 5px;
+}
+
+#username{
+	float:right;
+	padding:14.5px 5px 0px 0px;
+	font-family:century gothic;
+	font-size:15px;
+	color:white;	
+}
+
+#menu{
+	display:block;
+	height:25px;
+	width:100%;
+	background: #e6d5b8;
+}
+
+#banner{
+	display:block;
+	margin:5px auto;
+	height:200px;
+	width:75%;
+	background:#c1c1c1;
+}
+
+.category_heading{
+	display:block;
+	margin: 5px auto;
+	background:#f7f7f7;
+	height:25px;
+	width:75%;
+}
+
+.category_contents{
+	display:flex;
+	margin:5px auto;
+	position:relative;
+	max-height:330px;
+	width:75%;
+	overflow-x:auto;
+	background:#f7f7f7;
+}
+
+.category_item{
+	margin:5px;
+	position:relative;
+	float:left;
+	height:300px;
+	min-width:300px;
+	background:black;	
+}
+
+#footer{
+	display:block;
+	margin:0px auto;
+	height:200px;
+	width:100%;
+	background:#1C2B2D;
+}
