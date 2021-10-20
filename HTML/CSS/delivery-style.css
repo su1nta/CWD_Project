@@ -185,6 +185,22 @@
 	padding:10px 0px 0px 10px;
 }
 
+#appliancelink{
+	float:left;
+	font-family:century gothic;
+	font-size:25px;
+	horizontal-align:middle;
+}
+
+#appliancepic{
+	float:right;
+	display:block;
+	height:290px;
+	width:220px;
+	margin:5px auto;
+	transition:transform .4s;
+} 
+
 #footer{
 	display:block;
 	margin:0px auto;
