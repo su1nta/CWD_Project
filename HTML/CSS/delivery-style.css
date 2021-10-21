@@ -7,6 +7,8 @@
 
 #header{
 	display:block;
+	position:fixed;
+	top:0px;
 	height:50px;
 	width:100%;
 	background:#1f6f8b;
@@ -117,13 +119,12 @@
 	color:#1C2B2D;
 	padding:4px;
 	margin:10px;
-	position:relative;
 }
 
 #menu a:hover{
 	color:#e6d5b8;
-	background: #1f6f8b;
-	transition:.5s;
+	background-image:linear-gradient(90deg,#1f6f8b,#1C2B2D);
+	transition:.6s;
 }
 
 #banner{
@@ -152,16 +153,15 @@
 .category_container{
 	display:flex;
 	margin:5px auto;
-	position:relative;
 	max-height:330px;
 	width:75%;
 	overflow-x:auto;
+	overflow-y:hidden;
 	padding:5px;
 }
 
 .category_item{
 	margin:5px;
-	position:relative;
 	float:left;
 	height:300px;
 	min-width:300px;
@@ -185,21 +185,21 @@
 	padding:10px 0px 0px 10px;
 }
 
-#appliancelink{
-	float:left;
-	font-family:century gothic;
-	font-size:25px;
-	horizontal-align:middle;
+#offer1{
+	display:table-cell;
+	margin:0px auto;
+	height:300px;
+	width:460px;
+	transition: transform .4s;
 }
 
-#appliancepic{
-	float:right;
-	display:block;
-	height:290px;
-	width:220px;
+#bar{
 	margin:5px auto;
-	transition:transform .4s;
-} 
+	background:#1f6f8b;
+	width:90%;
+	height:5px;
+	border-radius:10px;
+}
 
 #footer{
 	display:block;
