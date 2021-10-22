@@ -1,8 +1,11 @@
 *{margin:0px;}
+body{
+	background-color: #EBECED;
+}
+
 #wrapper{
 	height:auto;
 	width:100%;
-	background-color: #EBECED;
 }
 
 #header{
@@ -64,11 +67,11 @@
 }
 
 #contact-container{
-	padding-top:25px;
+	padding-top:100px;
 	height:auto;
 	width:35%;
 	margin:0px auto;
-	background-color: white;
+	background-color: transparent;
 }
 #contact-form{
 	text-align:center;
@@ -76,13 +79,62 @@
 }
 #contact-form p{
 	font-family:century gothic;
+	background-color:#1f6f8b;
+	color:white;
+	padding:5px;
 	font-size:20px;
 	margin:0px auto;
-	position:relative;
 }
 
 #contact-form input{
-	width:40%;
 	background-color: transparent;
 	border:2px solid #1f6f8b;
+	height:35px;
+}
+
+#submit-button{
+	transition:.2s;
+}
+
+#submit-button:hover{
+	background-color: #1f6f8b;
+	color:white;
+}
+
+#links{
+	height:auto;
+	width:35%;
+	margin:0px auto;
+	padding-top:20px;
+}
+
+#links table{
+	margin:0px auto;
+}
+
+#logos{
+	height: 30px;
+	width: 30px;
+	padding:5px;
+	cursor: pointer;
+}
+
+#footer{
+	bottom:0px;
+	position:absolute;
+	height:auto;
+	width:100%;
+	background-color: #1C2B2D;
+}
+
+#copyright{
+	float:left;
+	height:15px;
+}
+
+#copyright p{
+	font-family: century gothic;
+	font-size:10px;
+	color:white;
+	padding-left:5px;
 }

@@ -15,12 +15,40 @@
 			</div>
 		</div>
 		<div id="contact-container">
-			<form id="contact-form">
-					<p>Name     <input type="text" required=required></p>
-					<p>email     <input type="email" required=required></p>
-					<p></p>
-					<input type="submit" href="#">
+			<form id="contact-form" action="next.php">
+					<table border="0" align="center" style="margin:0px auto;">
+							<tr>
+								<td><p>Name</p></td>
+								<td width="300px"><input type="text" name="name" required="required" size="40"></td>
+							</tr>
+							<tr>
+								<td><p>eMail</p></td>
+								<td width="300px"><input type="email" name="email" required="required" size="40"></td>
+							</tr>
+							<tr>
+								<td><p>Query</p></td>
+								<td width="300px"><input type="text" name="query" required="required" size="40" style="height: 100px;"></td>
+							</tr>
+							<tr>
+								<td colspan="2" align="center"><input id="submit-button" type="submit" href="#">&nbsp;&nbsp;<input id="submit-button" type="reset"></td>
+							</tr>
+					</table>
 			</form>
+		</div>
+		<div id="links">
+			<table border="0" align="center">
+				<tr>
+					<td><a href="https://www.twitter.com"><img id="logos" src="Images\twitter.svg"></a></td>
+					<td><a href="https://www.instagram.com"><img id="logos" src="Images\instagram.svg"></a></td>
+					<td><a href="https://www.facebook.com"><img id="logos" src="Images\facebook.svg"></a></td>
+					<td><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGLPkRLsNFNKgJPPztGtNHhRzLBrrzzpZcCQlwpkQZDDrFNWTbpCWQvJCnRRwxZlmdtCChL"><img id="logos" src="Images\at.svg"></a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="copyright">
+			<p>&copy;2002-2021 Dailyver LLC. All Rights Reserved.</p>
 		</div>
 	</div>
 </body>
