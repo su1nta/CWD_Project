@@ -3,11 +3,11 @@
 #wrapper{
 	height:auto;
 	width:100%;
+	background-color:#EBECED;
 }
 
 #header{
 	display:block;
-	position:fixed;
 	top:0px;
 	height:50px;
 	width:100%;
@@ -91,6 +91,7 @@
 
 #username{
 	float:right;
+	position:relative;
 	padding:14.5px 5px 0px 0px;
 	font-family:century gothic;
 	font-size:15px;
@@ -108,6 +109,7 @@
 	margin:0px auto;
 	height:25px;
 	width:50%;
+	padding-bottom:6px;
 }
 
 .menu_items{
@@ -119,12 +121,13 @@
 	color:#1C2B2D;
 	padding:4px;
 	margin:10px;
+	transition:.4s;
 }
 
 #menu a:hover{
 	color:#e6d5b8;
-	background-image:linear-gradient(90deg,#1f6f8b,#1C2B2D);
-	transition:.6s;
+	background-color:#1f6f8b;
+	<--background-image:linear-gradient(90deg,#1f6f8b,#1C2B2D);-->
 }
 
 #banner{

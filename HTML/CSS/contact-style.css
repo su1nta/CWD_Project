@@ -2,6 +2,7 @@
 #wrapper{
 	height:auto;
 	width:100%;
+	background-color: #EBECED;
 }
 
 #header{
@@ -60,4 +61,28 @@
 	font-family:century gothic;
 	font-size:15px;
 	color:white;	
+}
+
+#contact-container{
+	padding-top:25px;
+	height:auto;
+	width:35%;
+	margin:0px auto;
+	background-color: white;
+}
+#contact-form{
+	text-align:center;
+	margin:0px auto;
+}
+#contact-form p{
+	font-family:century gothic;
+	font-size:20px;
+	margin:0px auto;
+	position:relative;
+}
+
+#contact-form input{
+	width:40%;
+	background-color: transparent;
+	border:2px solid #1f6f8b;
 }
