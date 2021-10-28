@@ -3,6 +3,35 @@
 	<title>Dailyver.in</title>
 	<link rel="stylesheet" href="CSS\delivery-style.css">
 	<link rel="icon" href="Images\favicon.ico">
+
+	<script type="text/javascript">
+		var container=document.getElementById('category_container');
+
+		function slideCategory(value){
+			if(value==0)
+			{
+				container.scrollLeft +=20;
+			}
+			else if(value==1)
+			{
+				container.scrollLeft -=20;
+			}
+		}
+
+		var num=0;
+		function dropDown(){
+			var menu=document.getElementById('drop_down');
+			if(num==1)
+			{
+				menu.style.display="block";
+				num=0;
+			}
+			else if(num==0){
+				menu.style.display="none";
+				num=1;
+			}
+		}
+	</script>
 </head>
 <body>
 	<div id="wrapper">
@@ -18,59 +47,67 @@
 			</div>
 			<div id="userd_container">
 				
-				<img id="usericon" src="Images\user.svg">
+				<img id="usericon" src="Images\user.svg" onclick="dropDown()">
+				<ul id="drop_down">
+					<li><a href="#">View Profile</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="#">About us</a></li>
+				</ul>
 				<p id="username">Armin Arlert</p>
 			</div>
 		</div>
 		<div id="menu">
-			<p align="center" style="padding-top:2px;">
-				<a class="menu_items" href="#">Smartphones & Accessories</a>
-				<a class="menu_items" href="#">Home Decor</a>
-				<a class="menu_items" href="#">Electronics</a>
-				<a class="menu_items" href="#">Furniture</a>
-				<a class="menu_items" href="#">Appliances</a>
-				<a class="menu_items" href="#">Grocery</a>
+			<p align="center" style="padding-top:3px;">
+				<a class="menu_items" href="categorypage1.html">Smartphones & Accessories</a>
+				<a class="menu_items" href="categorypage2.html">Home Decor</a>
+				<a class="menu_items" href="categorypage3.html">Electronics</a>
+				<a class="menu_items" href="categorypage4.html">Furniture</a>
+				<a class="menu_items" href="categorypage5.html">Appliances</a>
+				<a class="menu_items" href="categorypage6.html">Grocery</a>
 			</p>
 		</div>
 		<div id="banner">
 			<img id="bannerpic" src="Images\bannerpic.jpg">
 		</div>
+		
 		<div class="category_heading">
 			<p style="color: #1C2B2D; font-family:century gothic; font-weight:bold; font-size:25px;">Deals on DSLRs</p>
 		</div>
-		<div class="category_container">
+		<button id="slideleft" type="button" onclick="slideCategory(1)">&#10094;</button>
+		<button id="slideright" type="button" onclick="slideCategory(0)">&#10095;</button>
+		<div class="category_container" id="category_container">
 			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; height:200px; width:280px; transition:transform .4s;"></a>
+				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="display:block; margin:5px auto; height:200px; width:280px; transition:transform .4s;"></a>
 				<p class="item_details">Canon EOS 7D</p>
 				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
 				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
 			</div>
 			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; height:200px; width:280px; transition:transform .4s;"></a>
+				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="display:block; margin:5px auto; height:200px; width:280px; transition:transform .4s;"></a>
 				<p class="item_details">Sony Alpha a-6000</p>
 				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
 				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
 			</div>
 			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; height:200px; width:250px; transition:transform .4s;"></a>
+				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="display:block; margin:5px auto; height:200px; width:250px; transition:transform .4s;"></a>
 				<p class="item_details">Canon EOS 1200D</p>
 				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
 				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
 			</div>
 			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; height:200px; width:260px; transition:transform .4s;"></a>
+				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="display:block; margin:5px auto; height:200px; width:260px; transition:transform .4s;"></a>
 				<p class="item_details">Sony Alpha 7R</p>
 				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
 				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
 			</div>
 			<div class="category_item">
-				<a class="cat_item_link" href="product5.html"><img src="Images\nikoncam.png" style="margin:5px auto; height:200px; width:240px; transition:transform .4s;"></a>
+				<a class="cat_item_link" href="product5.html"><img src="Images\nikoncam.png" style="display:block; margin:5px auto; height:200px; width:240px; transition:transform .4s;"></a>
 				<p class="item_details">Nikon D3100</p>
 				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 32,990</p>
 				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
 			</div>
 			<div class="category_item">
-				<a class="cat_item_link" href="product6.html"><img src="Images\sonydigcam.png" style="margin:5px auto; height:200px; width:250px; transition:transform .4s;"></a>
+				<a class="cat_item_link" href="product6.html"><img src="Images\sonydigcam.png" style="display:block; margin:5px auto; height:200px; width:250px; transition:transform .4s;"></a>
 				<p class="item_details">Sony Cyber Shot</p>
 				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 9,999</p>
 				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">30% off</span></p>
