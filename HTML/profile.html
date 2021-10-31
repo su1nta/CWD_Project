@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>Armin Arlert-Profile</title>
+	<link rel="stylesheet" href="CSS\profile-style.css">
+	<link rel="icon" href="Images\favicon.ico">
+
+	<script type="text/javascript">
+		var num=0;
+		function dropDown(){
+			var menu=document.getElementById('drop_down');
+			if(num==1)
+			{
+				menu.style.display="block";
+				num=0;
+			}
+			else if(num==0){
+				menu.style.display="none";
+				num=1;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div id="logo">
+				<a id="logolink" href="index.html"><p id="logoname">Dailyver<font face="century gothic" size="2">.in</font></p></a>
+			</div>
+			<div id="search_container">
+				<div id="heading"><p><strong>Your Profile</strong></p></div>
+			</div>
+			<div id="userd_container">
+				
+				<img id="usericon" src="Images\user.svg" onclick="dropDown()">
+				<ul id="drop_down">
+					<li><a href="#">View Profile</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="#">About us</a></li>
+				</ul>
+				<p id="username">Armin Arlert</p>
+			</div>
+		</div>
+		<div id="menu">
+			<p align="center" style="padding-top:3px;">
+				<a class="menu_items" href="categorypage1.html">Smartphones & Accessories</a>
+				<a class="menu_items" href="categorypage2.html">Home</a>
+				<a class="menu_items" href="categorypage3.html">Electronics</a>
+				<a class="menu_items" href="categorypage4.html">Furniture</a>
+				<a class="menu_items" href="categorypage5.html">Appliances</a>
+				<a class="menu_items" href="categorypage6.html">Grocery</a>
+			</p>
+		</div>
+
+        <div id="details">
+            <div id="left_details">
+                <img src="Images\user-big.svg"><br>
+                <span>Armin Arlert</span>
+                <span style="font-size:15px; height:15px;"><img src="Images/location-point2.svg" style="margin:0px; display:inline-block; height:15px; width:15px; border:0px;" alt="locaation-logo">Sodepur, India</span>
+            </div>
+            <div id="right_details">
+                <div id="orders">
+                    <a href="#"><img src="Images\box.svg"><span style="margin-top:22px;">Your Orders</span></a><span style="position:relative;float:right; right:7%;margin-top:20px; padding:2px 4px; background-color: #e02401;color:white; border-radius: 25%;">28</span>
+                    <hr>
+                    <a href="#"><img src="Images\map-marker.svg"><span style="margin-top:22px;">Delivery Addresses</span></a>
+                </div>
+                <div id="orders">
+                    <a href="#"><img src="Images\transaction.svg"><span style="margin-top:22px;">Payment Options</span></a>
+                    <hr>
+                    <a href="#"><img src="Images\plus.svg"><span style="margin-top:22px;">Dailyver Plus</span></a>
+                </div>
+                <div id="orders">
+                    <a href="#"><img src="Images\ticket.svg"><span style="margin-top:22px;">Coupons</span></a><span style="position:relative;float:right; right:7%;margin-top:20px; padding:2px 4px; background-color: #e02401;color:white; border-radius: 25%;">3</span>
+                    <hr>
+                    <a href="#"><img src="Images\package.svg"><span style="margin-top:22px;">Return&Refund Policy</span></a>
+                </div>
+                <div id="orders">
+                    <a href="#"><img src="Images\shield.svg"><span style="margin-top:22px;">Privacy Settings</span></a>
+                    <hr>
+                    <a href="#"><img src="Images\camera.svg"><span style="margin-top:22px;">Photo ID Proof</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+			<a href="index.html" style="text-decoration: none;"><div id="bar"></div></a>
+			<div id="site_details" style="margin-top:5px; float:left;position:relative;"><p class="item_details" style=" display:inline-block;color:white;">Dailyver</p></div><div id="site_details" style="margin-top:15px; margin-left:0px; float:left; position:relative;"><p class="item_details" style="font-size:15px;color:#c1c1c1;">English(IN)</p></div><br><br><br>
+			<div id="site_details" style="margin-top:5px; margin-bottom:0px; position:relative;"><p class="item_details" style="display:inline-block; color:white; font-size:12px; padding-top:0px;">Australia&nbsp;&nbsp;Brazil&nbsp;&nbsp;Canada&nbsp;&nbsp;China&nbsp;&nbsp;France&nbsp;&nbsp;Germany&nbsp;&nbsp;Italy&nbsp;&nbsp;Japan&nbsp;&nbsp;Mexico&nbsp;&nbsp;Netherlands&nbsp;&nbsp;Poland&nbsp;&nbsp;Singapore&nbsp;&nbsp;Spain&nbsp;&nbsp;Turkey&nbsp;&nbsp;United Arab Emirates&nbsp;&nbsp;United Kingdom&nbsp;&nbsp;United States</p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p class="item_details" style="display:inline-block;color:white; font-size:15px; padding-top:5px;"><i>A versatile shopping stop which completes your daily life.</i></p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p class="item_details" style="display:inline-block;color:white; font-size:12px;"><img src="Images/location-point.svg" style="height:12px; width:12px;" alt="location"> Our Head Residence: Bangalore, India</p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p class="item_details" style="display:inline-block;color:white; font-size:12px;">&copy;2002-2021 Dailyver LLC. All Rights Reserved.</p></div>
+		</div>
+	</div>
+</body>
+</html>

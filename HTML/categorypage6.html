@@ -3,6 +3,21 @@
 	<title>Grocery</title>
 	<link rel="stylesheet" href="CSS\categorypage6-style.css">
 	<link rel="icon" href="Images\favicon.ico">
+	<script type="text/javascript">
+		var num=1;
+		function dropDown(){
+			var menu=document.getElementById('drop_down');
+			if(num==1)
+			{
+				menu.style.display="block";
+				num=0;
+			}
+			else if(num==0){
+				menu.style.display="none";
+				num=1;
+			}
+		}
+	</script>
 </head>
 <body>
 	<div id="wrapper">
@@ -11,141 +26,133 @@
 				<a id="logolink" href="index.html"><p id="logoname">Dailyver<font face="century gothic" size="2">.in</font></p></a>
 			</div>
 			<div id="search_container">
-				<form>
+				<form action="404.html">
 					<input id="searchbar" type="text" placeholder="Search">
-					<div id="searchlogo_container"><img id="searchlogo" src="Images\search.svg" align="center"></div>
+					<div id="searchlogo_container"><input type="submit" style="background-color:transparent; border:none;" value=" "></div>
 				</form>	
+
 			</div>
 			<div id="userd_container">
-				
-				<img id="usericon" src="Images\user.svg">
+				<img id="usericon" src="Images\user.svg" onclick="dropDown()">
+				<ul id="drop_down">
+					<li><a href="profile.html">View Profile</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="#">About us</a></li>
+				</ul>
 				<p id="username">Armin Arlert</p>
 			</div>
 		</div>
 		<div id="menu">
 			<p align="center" style="padding-top:3px;">
 				<a class="menu_items" href="categorypage1.html">Smartphones & Accessories</a>
-				<a class="menu_items" href="categorypage2.html">Home Decor</a>
+				<a class="menu_items" href="categorypage2.html">Home</a>
 				<a class="menu_items" href="categorypage3.html">Electronics</a>
 				<a class="menu_items" href="categorypage4.html">Furniture</a>
 				<a class="menu_items" href="categorypage5.html">Appliances</a>
-				<a class="menu_items" href="categorypage6.html" style="background-color: #1f6f8b; color: #e6d5b8; border-radius: 5px;">Grocery</a>
+				<a class="menu_items" href="categorypage6.html" style="background-color: #E02401; color:#EBECED; border-radius:5px;">Grocery</a>
 			</p>
 		</div>
-        <br>
         <h1 id="heading">Grocery</h1>
-        
-
-        <div class="category_container">
-			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
+        <br>
+        <div id="category_container">
+			<div id="category_item" style="padding-left:10px;">
+				<a class="cat_item_link" href="#"><img src="Images\Grocery\grocery1.jpeg" style="margin:5px auto; display:block; height:200px; width:160px; transition:transform .4s;"></a>
+				<p id="item_details" style="font-size:20px;">Tata Sampann Toor Dal(1 kg)</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Grocery\grocery2.jpeg" style="margin:5px auto; display:block; height:200px; width:160px; transition:transform .4s;"></a>
+				<p id="item_details" style="font-size:20px;">AASHIRVAAD Organic Toor Dal(1 kg)</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Grocery\grocery3.jpeg" style="margin:5px auto; display:block; height:200px; width:160px; transition:transform .4s;"></a>
+				<p id="item_details" style="font-size:20px;">BRITANNIA Little Hearts Classic Sweet & Salty(75 g)</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Grocery\grocery4.jpeg" style="margin:5px auto; display:block; height:200px; width:180px; transition:transform .4s;"></a>
+				<p id="item_details" style="font-size:20px;">BRITANNIA Nutri Choice High Fibre Biscuits Digestive(1 kg, Pack of 5)</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
 			</div>
 		</div>
 
-        <div class="category_container">
-			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
+        <div id="category_container">
+			<div id="category_item" style="padding-left:10px;">
+				<a class="cat_item_link" href="#"><img src="Images\Grocery\grocery5.jpeg" style="margin:5px auto; display:block; height:200px; width:150px; transition:transform .4s;"></a>
+				<p id="item_details" style="font-size:20px;">Tata Premium Tea Pouch</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Grocery\grocery6.jpeg" style="margin:5px auto; display:block; height:200px; width:150px; transition:transform .4s;"></a>
+				<p id="item_details" style="font-size:20px;">Taj Mahal Tea Box</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Grocery\grocery7.jpeg" style="margin:5px auto; display:block; height:200px; width:150px; transition:transform .4s;"></a>
+				<p id="item_details" style="font-size:20px;">Maggi Cheese Macaroni Pasta(70 g)</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Grocery\grocery8.jpeg" style="margin:5px auto; display:block; height:200px; width:150px; transition:transform .4s;"></a>
+				<p id="item_details" style="font-size:20px;">Maggi Chicken Instant Noodles Non-vegetarian(71 g)</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
 			</div>
 		</div>
 
-        <div class="category_container">
-			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
+        <div id="category_container">
+			<div id="category_item" style="padding-left:10px;">
+				<a class="cat_item_link" href="#"><img src="Images\Grocery\grocery9.jpeg" style="margin:5px auto; display:block; height:200px; width:190px; transition:transform .4s;"></a>
+				<p id="item_details" style="font-size:15px;">NIVEA Men Creme, Non Greasy Moisturizer, Cream for Face, Body & Hands(75 ml)</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Grocery\grocery10.jpeg" style="margin:5px auto; display:block; height:200px; width:80px; transition:transform .4s;"></a>
+				<p id="item_details" style="font-size:20px;">Himalaya Herbals Nourishing Body Lotion for Normal Skin(200 ml)</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Grocery\grocery11.jpeg" style="margin:5px auto; display:block; height:200px; width:150px; transition:transform .4s;"></a>
+				<p id="item_details" style="font-size:20px;">Colin Glass & Surface Cleaner Liquid Spray Bottle(500 ml)</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Grocery\grocery12.jpeg" style="margin:5px auto; display:block; height:200px; width:150px; transition:transform .4s;"></a>
+				<p id="item_details" style="font-size:20px;">LIZOL Disinfectant Surface Cleaner Neem(975 ml)</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
 			</div>
 		</div>
 
-        <div class="category_container">
-			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
+        <div id="category_container">
+			<div id="category_item" style="padding-left:10px;">
+				<a class="cat_item_link" href="#"><img src="Images\Grocery\grocery13.jpeg" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
+				<p id="item_details" style="font-size:20px;">UPF Healthy Hen White Eggs(6 Units)</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Grocery\grocery14.jpeg" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
+				<p id="item_details" style="font-size:15px;">MACARIZE 01 pc Heart Hold Stainless Steel Long Lasting Safety Kitchen Lighter</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Grocery\grocery15.jpeg" style="margin:5px auto; display:block; height:200px; width:80#px; transition:transform .4s;"></a>
+				<p id="item_details" style="font-size:20px;">Real Masala Mixed Fruit(1 L)</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Grocery\grocery16.jpeg" style="margin:5px auto; display:block; height:200px; width:150px; transition:transform .4s;"></a>
+				<p id="item_details" style="font-size:20px;">INDIA GATE Regular Choice Basmati Rice(5 kg)</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
 			</div>
 		</div>
 
         <div id="footer">
-			<a href="categorypage5.html" style="text-decoration: none;"><div id="bar"><p style="color:#e6d5b8; font-family:century gothic; font-size:25px; text-align:center;">Back to Top</p></div></a>
+			<a href="categorypage6.html" style="text-decoration: none;"><div id="bar"><p style="color:#e6d5b8; font-family:century gothic; font-size:25px; text-align:center;">Back to Top</p></div></a>
+			<div id="site_details" style="margin-top:5px; float:left;position:relative;"><p id="item_details" style=" display:inline-block;color:white;">Dailyver</p></div><div id="site_details" style="margin-top:15px; margin-left:0px; float:left; position:relative;"><p id="item_details" style="font-size:15px;color:#c1c1c1;">English(IN)</p></div><br><br><br>
+			<div id="site_details" style="margin-top:5px; margin-bottom:0px; position:relative;"><p id="item_details" style="display:inline-block; color:white; font-size:12px; padding-top:0px;">Australia&nbsp;&nbsp;Brazil&nbsp;&nbsp;Canada&nbsp;&nbsp;China&nbsp;&nbsp;France&nbsp;&nbsp;Germany&nbsp;&nbsp;Italy&nbsp;&nbsp;Japan&nbsp;&nbsp;Mexico&nbsp;&nbsp;Netherlands&nbsp;&nbsp;Poland&nbsp;&nbsp;Singapore&nbsp;&nbsp;Spain&nbsp;&nbsp;Turkey&nbsp;&nbsp;United Arab Emirates&nbsp;&nbsp;United Kingdom&nbsp;&nbsp;United States</p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p id="item_details" style="display:inline-block;color:white; font-size:15px; padding-top:5px;"><i>A versatile shopping stop which completes your daily life.</i></p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p id="item_details" style="display:inline-block;color:white; font-size:12px;"><img src="Images/location-point.svg" style="height:12px; width:12px;" alt="location"> Our Head Residence: Bangalore, India</p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p id="item_details" style="display:inline-block;color:white; font-size:12px;">&copy;2002-2021 Dailyver LLC. All Rights Reserved.</p></div>
 		</div>
 	</div>
 </body>

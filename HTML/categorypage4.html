@@ -3,6 +3,21 @@
 	<title>Furniture</title>
 	<link rel="stylesheet" href="CSS\categorypage4-style.css">
 	<link rel="icon" href="Images\favicon.ico">
+	<script type="text/javascript">
+		var num=1;
+		function dropDown(){
+			var menu=document.getElementById('drop_down');
+			if(num==1)
+			{
+				menu.style.display="block";
+				num=0;
+			}
+			else if(num==0){
+				menu.style.display="none";
+				num=1;
+			}
+		}
+	</script>
 </head>
 <body>
 	<div id="wrapper">
@@ -11,141 +26,144 @@
 				<a id="logolink" href="index.html"><p id="logoname">Dailyver<font face="century gothic" size="2">.in</font></p></a>
 			</div>
 			<div id="search_container">
-				<form>
+				<form action="404.html">
 					<input id="searchbar" type="text" placeholder="Search">
-					<div id="searchlogo_container"><img id="searchlogo" src="Images\search.svg" align="center"></div>
+					<div id="searchlogo_container"><input type="submit" style="background-color:transparent; border:none;" value=" "></div>
 				</form>	
+
 			</div>
 			<div id="userd_container">
-				
-				<img id="usericon" src="Images\user.svg">
+				<img id="usericon" src="Images\user.svg" onclick="dropDown()">
+				<ul id="drop_down">
+					<li><a href="profile.html">View Profile</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="#">About us</a></li>
+				</ul>
 				<p id="username">Armin Arlert</p>
 			</div>
 		</div>
 		<div id="menu">
 			<p align="center" style="padding-top:3px;">
 				<a class="menu_items" href="categorypage1.html">Smartphones & Accessories</a>
-				<a class="menu_items" href="categorypage2.html">Home Decor</a>
+				<a class="menu_items" href="categorypage2.html">Home</a>
 				<a class="menu_items" href="categorypage3.html">Electronics</a>
-				<a class="menu_items" href="categorypage4.html" style="background-color: #1f6f8b; color: #e6d5b8; border-radius: 5px;">Furniture</a>
+				<a class="menu_items" href="categorypage4.html" style="background-color: #E02401; color:#EBECED; border-radius:5px;">Furniture</a>
 				<a class="menu_items" href="categorypage5.html">Appliances</a>
 				<a class="menu_items" href="categorypage6.html">Grocery</a>
 			</p>
 		</div>
-        <br>
         <h1 id="heading">Furniture</h1>
-        
-
-        <div class="category_container">
-			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
+        <br>
+		<h2 id="category_heading">Office Chair&Desk</h2>
+        <div id="category_container">
+			<div id="category_item" style="padding-left:10px;">
+				<a class="cat_item_link" href="#"><img src="Images\Desks\desk1.jpg" style="margin:5px auto; display:block; height:200px; width:200px; transition:transform .4s;"></a><br>
+				<p id="item_details">Spacewood Study Desk</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 6,824</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Desks\desk2.jpg" style="margin:5px auto; display:block; height:200px; width:200px; transition:transform .4s;"></a>
+				<p id="item_details">BLUEWUD Clonard Study Desk</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,149</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Desks\desk3.jpg" style="margin:5px auto; display:block; height:200px; width:200px; transition:transform .4s;"></a><br>
+				<p id="item_details">BLUEWUD Alex BookShelf</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 4,300</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Desks\desk4.jpg" style="margin:5px auto; display:block; height:200px; width:200px; transition:transform .4s;"></a><br>
+				<p id="item_details">DeckUp Muvo 3-Shelf</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,999</p>
 			</div>
-		</div>
-
-        <div class="category_container">
-			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Desks\desk5.jpg" style="margin:5px auto; display:block; height:200px; width:200px; transition:transform .4s;"></a><br>
+				<p id="item_details">SAVYA HOME APEX Delta</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 3,140</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
-			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
-			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Desks\desk6.jpg" style="margin:5px auto; display:block; height:200px; width:200px; transition:transform .4s;"></a><br>
+				<p id="item_details">Solimo Elite High Back</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 7,749</p>
 			</div>
 		</div>
-
-        <div class="category_container">
-			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
+		<h2 id="category_heading">Beds</h2>
+        <div id="category_container">
+			<div id="category_item" style="padding-left:10px;">
+				<a class="cat_item_link" href="#"><img src="Images\Beds\bed1.jpg" style="margin:5px auto; display:block; height:190px; width:200px; transition:transform .4s;"></a>
+				<p id="item_details">Solimo Petra Solid Sheesham Wood King Bed</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 14,099</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Beds\bed2.jpg" style="margin:5px auto; display:block; height:190px; width:200px; transition:transform .4s;"></a>
+				<p id="item_details">Solimo Canes Engineered Wood Queen Bed</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 11,999</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Beds\bed3.jpg" style="margin:5px auto; display:block; height:190px; width:200px; transition:transform .4s;"></a>
+				<p id="item_details">Solimo Canes Engineered Wood King Bed</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 13,499</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Beds\bed4.jpg" style="margin:5px auto; display:block; height:190px; width:200px; transition:transform .4s;"></a>
+				<p id="item_details">Solimo Trundle Solid Sheesham Wood</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 7,999</p>
 			</div>
 		</div>
-
-        <div class="category_container">
-			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
+		<h2 id="category_heading">Sofa</h2>
+        <div id="category_container">
+			<div id="category_item" style="padding-left:10px;">
+				<a class="cat_item_link" href="#"><img src="Images\Sofas\sofa1.jpg" style="margin:5px auto; display:block; height:180px; width:200px; transition:transform .4s;"></a><br>
+				<p id="item_details">Metallika Centerville Three Seater Sofa</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 20,190</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Sofas\sofa2.jpg" style="margin:5px auto; display:block; height:180px; width:200px; transition:transform .4s;"></a><br>
+				<p id="item_details">Coirfit Jute Fabric Washable Cover</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 9,399</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Sofas\sofa3.jpg" style="margin:5px auto; display:block; height:180px; width:200px; transition:transform .4s;"></a><br>
+				<p id="item_details">Solimo Alen 6 Seater Fabric Sofa Set</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 25,999</p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Sofas\sofa4.jpg" style="margin:5px auto; display:block; height:180px; width:200px; transition:transform .4s;"></a><br>
+				<p id="item_details">Solimo Tulip Leatherette 3 Seater Sofa</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 19,499</p>
+			</div>
+		</div>
+		<h2 id="category_heading">Dining Sets</h2>
+        <div id="category_container">
+			<div id="category_item" style="padding-left:10px;">
+				<a class="cat_item_link" href="#"><img src="Images\Dining\dining1.jpg" style="margin:5px auto; display:block; height:180px; width:200px; transition:transform .4s;"></a><br>
+				<p id="item_details">DriftingWood Dining Table 6 Seater</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
+			</div>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Dining\dining2.jpg" style="margin:5px auto; display:block; height:180px; width:200px; transition:transform .4s;"></a><br>
+				<p id="item_details">Nilkamal Jewel 4 Seater Dining Table</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
+			</div>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Dining\dining3.jpg" style="margin:5px auto; display:block; height:180px; width:200px; transition:transform .4s;"></a><br>
+				<p id="item_details">Nilkamal Jewel 6 Seater Dining Table Set</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
+			</div>
+			<div id="category_item">
+				<a class="cat_item_link" href="#"><img src="Images\Dining\dining4.jpg" style="margin:5px auto; display:block; height:180px; width:200px; transition:transform .4s;"></a><br>
+				<p id="item_details">Solimo Carina 6 Seater Dining Set</p>
+				<p id="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
 			</div>
 		</div>
 
         <div id="footer">
 			<a href="categorypage4.html" style="text-decoration: none;"><div id="bar"><p style="color:#e6d5b8; font-family:century gothic; font-size:25px; text-align:center;">Back to Top</p></div></a>
+			<div id="site_details" style="margin-top:5px; float:left;position:relative;"><p id="item_details" style=" display:inline-block;color:white;">Dailyver</p></div><div id="site_details" style="margin-top:15px; margin-left:0px; float:left; position:relative;"><p id="item_details" style="font-size:15px;color:#c1c1c1;">English(IN)</p></div><br><br><br>
+			<div id="site_details" style="margin-top:5px; margin-bottom:0px; position:relative;"><p id="item_details" style="display:inline-block; color:white; font-size:12px; padding-top:0px;">Australia&nbsp;&nbsp;Brazil&nbsp;&nbsp;Canada&nbsp;&nbsp;China&nbsp;&nbsp;France&nbsp;&nbsp;Germany&nbsp;&nbsp;Italy&nbsp;&nbsp;Japan&nbsp;&nbsp;Mexico&nbsp;&nbsp;Netherlands&nbsp;&nbsp;Poland&nbsp;&nbsp;Singapore&nbsp;&nbsp;Spain&nbsp;&nbsp;Turkey&nbsp;&nbsp;United Arab Emirates&nbsp;&nbsp;United Kingdom&nbsp;&nbsp;United States</p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p id="item_details" style="display:inline-block;color:white; font-size:15px; padding-top:5px;"><i>A versatile shopping stop which completes your daily life.</i></p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p id="item_details" style="display:inline-block;color:white; font-size:12px;"><img src="Images/location-point.svg" style="height:12px; width:12px;" alt="location"> Our Head Residence: Bangalore, India</p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p id="item_details" style="display:inline-block;color:white; font-size:12px;">&copy;2002-2021 Dailyver LLC. All Rights Reserved.</p></div>
 		</div>
 	</div>
 </body>

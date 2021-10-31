@@ -3,33 +3,54 @@
 	<title>product2</title>
 	<link rel="stylesheet" href="CSS\product-style.css">
 	<link rel="icon" href="Images\favicon.ico">
+	<script type="text/javascript">
+		var num=1;
+		function dropDown(){
+			var menu=document.getElementById('drop_down');
+			if(num==1)
+			{
+				menu.style.display="block";
+				num=0;
+			}
+			else if(num==0){
+				menu.style.display="none";
+				num=1;
+			}
+		}
+	</script>
 </head>
 <body>
-	<div id="wrapper">
-		<div id="header">
-			<div id="logo">
-				<a id="logolink" href="index.html"><p id="logoname">Dailyver<font face="century gothic" size="2">.in</font></p></a>
-			</div>
-			<div id="search_container">
-				<form>
-					<input id="searchbar" type="text" placeholder="Search">
-					<div id="searchlogo_container"><img id="searchlogo" src="Images\search.svg" align="center"></div>
-				</form>	
-			</div>
-			<div id="userd_container">
-				<img id="usericon" src="Images\user.svg"><p id="username">Armin Arlert</p>
-			</div>
+	<div id="header">
+		<div id="logo">
+			<a id="logolink" href="index.html"><p id="logoname">Dailyver<font face="century gothic" size="2">.in</font></p></a>
 		</div>
-		<div id="menu">
-			<p align="center" style="padding-top:2px;">
-				<a class="menu_items" href="categorypage1.html">Smartphones & Accessories</a>
-				<a class="menu_items" href="categorypage2.html">Home Decor</a>
-				<a class="menu_items" href="categorypage3.html">Electronics</a>
-				<a class="menu_items" href="categorypage4.html">Furniture</a>
-				<a class="menu_items" href="categorypage5.html">Appliances</a>
-				<a class="menu_items" href="categorypage6.html">Grocery</a>
-			</p>
+		<div id="search_container">
+			<form action="404.html">
+				<input id="searchbar" type="text" placeholder="Search">
+				<div id="searchlogo_container"><input type="submit" style="background-color:transparent; border:none;" value=" "></div>
+			</form>	
+
 		</div>
+		<div id="userd_container">
+			<img id="usericon" src="Images\user.svg" onclick="dropDown()">
+			<ul id="drop_down">
+				<li><a href="profile.html">View Profile</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#">About us</a></li>
+			</ul>
+			<p id="username">Armin Arlert</p>
+		</div>
+	</div>
+	<div id="menu">
+		<p align="center" style="padding-top:3px;">
+			<a class="menu_items" href="categorypage1.html">Smartphones & Accessories</a>
+			<a class="menu_items" href="categorypage2.html">Home</a>
+			<a class="menu_items" href="categorypage3.html">Electronics</a>
+			<a class="menu_items" href="categorypage4.html">Furniture</a>
+			<a class="menu_items" href="categorypage5.html">Appliances</a>
+			<a class="menu_items" href="categorypage6.html">Grocery</a>
+		</p>
+	</div>
 		<div id="pro_details_container">
 			<div id="pro_image">
 				<img src="Images\sonyalphacam.png">
@@ -41,7 +62,7 @@
 				</p>
 
 				<p align="left" style="float:left; font-weight:italic; padding-top:26px;color:white;">
-					<span style="background-color: #1f6f8b; border-radius:5px; padding:2px;"><i>Dailyver Verified</i></span>
+					<span style="background-color: #E02401; border-radius:5px; padding:2px;"><i>Dailyver Verified</i></span>
 				</p>
 
 				<br><br><br>
@@ -49,11 +70,11 @@
 				<p align="left" style="font-size:15px;">&#9733;&#9733;&#9733;&#9733;&#9734;&nbsp;&nbsp;18,757 ratings</p>
 				<hr style="width:100%; border:1px solid #c1c1c1; margin:5px auto;">
 				<p align="left" style="font-size:25px;">
-					<strong>&#8377;</strong> <span style="color: #1f6f8b; padding:2px;">58,490.00</span>
+					<strong>&#8377;</strong> <span style="color: #E02401; padding:2px;">58,490.00</span>
 					<span style="color:#c1c1c1; font-size:15px; padding:2px; text-decoration: line-through;">61,490.00</span>
 				</p>
 
-				<p align="left"><span style="color:#1f6f8b;"><strong>FREE </strong></span>delivery on minimum order of &#8377;499</p>
+				<p align="left"><span style="color:#E02401;"><strong>FREE </strong></span>delivery on minimum order of &#8377;499</p>
 				<br>
 				<a id="order" href="contact.html" style="text-decoration:none;">
 					<div id="ordernow">
@@ -67,13 +88,13 @@
 				<table align="center" style="padding-left:10px;">
 					<th><p align="left" style="padding:0px;">Available Offers</p></th>
 					<tr>
-						<td><p align="left" style="padding:2px; font-size:15px;"> <span style="color:#1f6f8b">No Cost EMI: </span>on order above &#8377;3000</p></td>
+						<td><p align="left" style="padding:2px; font-size:15px;"> <span style="color:#E02401">No Cost EMI: </span>on order above &#8377;3000</p></td>
 					</tr>
 					<tr>
-						<td><p align="left" style="padding:2px; font-size:15px;">Extra 5% off on <span style="color:#1f6f8b">HDFC Credit Cards</span></p></td>
+						<td><p align="left" style="padding:2px; font-size:15px;">Extra 5% off on <span style="color:#E02401">HDFC Credit Cards</span></p></td>
 					</tr>
 					<tr>
-						<td><p align="left" style="padding:2px; font-size:15px;">Get GST invoice and save upto<span style="color:#1f6f8b">30%</span></p></td>
+						<td><p align="left" style="padding:2px; font-size:15px;">Get GST invoice and save upto<span style="color:#E02401">30%</span></p></td>
 					</tr>
 				</table>
 				<br>
@@ -160,7 +181,12 @@
 			</div>
 		</div>
 		<div id="footer">
-			<a href="product2.html" style="text-decoration: none;"><div id="bar"><p style="color:#e6d5b8; font-family:century gothic; font-size:25px; text-align:center;">Back to Top</p></div></a>
+			<a href="index.html" style="text-decoration: none;"><div id="bar"><p style="color:#e6d5b8; font-family:century gothic; font-size:25px; text-align:center;">Back to Top</p></div></a>
+			<div id="site_details" style="margin-top:5px; float:left;position:relative;"><p class="item_details" style=" display:inline-block;color:white;">Dailyver</p></div><div id="site_details" style="margin-top:15px; margin-left:0px; float:left; position:relative;"><p class="item_details" style="font-size:15px;color:#c1c1c1;">English(IN)</p></div><br><br><br>
+			<div id="site_details" style="margin-top:5px; margin-bottom:0px; position:relative;"><p class="item_details" style="display:inline-block; color:white; font-size:12px; padding-top:0px;">Australia&nbsp;&nbsp;Brazil&nbsp;&nbsp;Canada&nbsp;&nbsp;China&nbsp;&nbsp;France&nbsp;&nbsp;Germany&nbsp;&nbsp;Italy&nbsp;&nbsp;Japan&nbsp;&nbsp;Mexico&nbsp;&nbsp;Netherlands&nbsp;&nbsp;Poland&nbsp;&nbsp;Singapore&nbsp;&nbsp;Spain&nbsp;&nbsp;Turkey&nbsp;&nbsp;United Arab Emirates&nbsp;&nbsp;United Kingdom&nbsp;&nbsp;United States</p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p class="item_details" style="display:inline-block;color:white; font-size:15px; padding-top:5px;"><i>A versatile shopping stop which completes your daily life.</i></p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p class="item_details" style="display:inline-block;color:white; font-size:12px;"><img src="Images/location-point.svg" style="height:12px; width:12px;" alt="location"> Our Head Residence: Bangalore, India</p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p class="item_details" style="display:inline-block;color:white; font-size:12px;">&copy;2002-2021 Dailyver LLC. All Rights Reserved.</p></div>
 		</div>
 	</div>
 </body>

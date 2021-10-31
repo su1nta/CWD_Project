@@ -3,6 +3,21 @@
 	<title>Electronics</title>
 	<link rel="stylesheet" href="CSS\categorypage3-style.css">
 	<link rel="icon" href="Images\favicon.ico">
+	<script type="text/javascript">
+		var num=1;
+		function dropDown(){
+			var menu=document.getElementById('drop_down');
+			if(num==1)
+			{
+				menu.style.display="block";
+				num=0;
+			}
+			else if(num==0){
+				menu.style.display="none";
+				num=1;
+			}
+		}
+	</script>
 </head>
 <body>
 	<div id="wrapper">
@@ -11,141 +26,203 @@
 				<a id="logolink" href="index.html"><p id="logoname">Dailyver<font face="century gothic" size="2">.in</font></p></a>
 			</div>
 			<div id="search_container">
-				<form>
+				<form action="404.html">
 					<input id="searchbar" type="text" placeholder="Search">
-					<div id="searchlogo_container"><img id="searchlogo" src="Images\search.svg" align="center"></div>
+					<div id="searchlogo_container"><input type="submit" style="background-color:transparent; border:none;" value=" "></div>
 				</form>	
+
 			</div>
 			<div id="userd_container">
-				
-				<img id="usericon" src="Images\user.svg">
+				<img id="usericon" src="Images\user.svg" onclick="dropDown()">
+				<ul id="drop_down">
+					<li><a href="profile.html">View Profile</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="#">About us</a></li>
+				</ul>
 				<p id="username">Armin Arlert</p>
 			</div>
 		</div>
 		<div id="menu">
 			<p align="center" style="padding-top:3px;">
 				<a class="menu_items" href="categorypage1.html">Smartphones & Accessories</a>
-				<a class="menu_items" href="categorypage2.html">Home Decor</a>
-				<a class="menu_items" href="categorypage3.html" style="background-color: #1f6f8b; color: #e6d5b8; border-radius: 5px;">Electronics</a>
+				<a class="menu_items" href="categorypage2.html">Home</a>
+				<a class="menu_items" href="categorypage3.html" style="background-color: #E02401; color:#EBECED; border-radius:5px;">Electronics</a>
 				<a class="menu_items" href="categorypage4.html">Furniture</a>
 				<a class="menu_items" href="categorypage5.html">Appliances</a>
 				<a class="menu_items" href="categorypage6.html">Grocery</a>
 			</p>
 		</div>
-        <br>
         <h1 id="heading">Electronics</h1>
-        
+        <br>
+		<h2 id="category_heading">Laptops</h2>
+        <div id="category_container">
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href="product.html"><img src="Images\Laptops\lap1.jpeg" style="margin:5px auto; display:block; height:160px; width:250px; transition:transform .4s; border-radius: 5px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px; font-size:25px;height:auto;width:60%;float:left;">APPLE MacBook Air M1 - (8 GB/256 GB SSD/Mac OS Big Sur)</p></a>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:right; margin-top:20px;width:20%;"><strong>Rs. 83,990</strong></p></a><br><br><br><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white; float:right;right:5%;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">25% off</span></p></a>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-Apple M1 Processor</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-8 GB DDR4 RAM</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-Mac OS Operating System</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-256 GB SSD</p>
+				</div>
+			</div>
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href=#"><img src="Images\Laptops\lap2.jpeg" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s; border-radius: 5px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px; font-size:25px;height:auto;width:60%;float:left;">Lenovo IdeaPad Gaming Ryzen 5 Hexa Core 4600H - (8 GB/512 GB SSD/Windows 10 Home/4 GB Graphics/NVIDIA GeForce GTX 1650/120 Hz) 15ARH05 Gaming Laptop  (15.6 inch, Onyx Black, 2.2 kg)</p></a>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:right; margin-top:20px;width:20%;"><strong>Rs. 54,990</strong></p></a><br><br><br><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white; float:right;right:5%;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+					
+				</div>
+			</div>
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href=#"><img src="Images\Laptops\lap3.jpeg" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s; border-radius: 5px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px; font-size:25px;height:auto;width:60%;float:left;">Lenovo IdeaPad 3 Core i3 11th Gen - (8 GB/256 GB SSD/Windows 10 Home) 15ITL6 Thin and Light Laptop  (15.6 inch, Arctic Grey, 1.6 kg, With MS Office)</p></a>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:right; margin-top:20px;width:20%;"><strong>Rs. 40,990</strong></p></a><br><br><br><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white; float:right;right:5%;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+				</div>
+			</div>
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href=#"><img src="Images\Laptops\lap4.jpeg" style="margin:5px auto; display:block; height:180px; width:250px; transition:transform .4s; border-radius: 5px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px; font-size:25px;height:auto;width:60%;float:left;">acer Aspire 5 Core i5 11th Gen - (8 GB/1 TB HDD/256 GB SSD/Windows 10 Home) A515-56 Thin and Light Laptop  (15.6 inch, Pure Silver, 1.65 kg)</p></a>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:right; margin-top:20px;width:20%;"><strong>Rs. 49,990</strong></p></a><br><br><br><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white; float:right;right:5%;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+				</div>
+			</div>
+		</div>
+		<h2 id="category_heading">Headphones</h2>
 
-        <div class="category_container">
-			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
+        <div id="category_container_hor">
+			<div id="category_item_hor" style="padding-left:10px;">
+				<a class="cat_item_link" href=#"><img src="Images\Headphones\head1.jpg" style="margin:5px auto; display:block; height:200px; width:160px; transition:transform .4s; border-radius: 5px;"></a>
+				<p class="item_details_hor">Sony MDR-ZX110A</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px;">Rs. 549</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
+			<div id="category_item_hor">
+				<a class="cat_item_link" href="#"><img src="Images\Headphones\head2.jpg" style="margin:5px auto; display:block; height:200px; width:180px; transition:transform .4s; border-radius: 5px;"></a>
+				<p class="item_details_hor">Tribit XFree Go Bluetooth</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px;">Rs. 2,244</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
+			<div id="category_item_hor">
+				<a class="cat_item_link" href="#"><img src="Images\Headphones\head3.jpg" style="margin:5px auto; display:block; height:200px; width:180px; transition:transform .4s; border-radius: 5px;"></a>
+				<p class="item_details_hor">boAt Rockerz 550</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px;">Rs. 1,499</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+			<div id="category_item_hor">
+				<a class="cat_item_link" href="#"><img src="Images\Headphones\head4.jpg" style="margin:5px auto; display:block; height:200px; width:180px; transition:transform .4s; border-radius: 5px;"></a>
+				<p class="item_details_hor">boAt Rockerz 510</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px;">Rs. 1,099</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+			</div>
+			<div id="category_item_hor">
+				<a class="cat_item_link" href="#"><img src="Images\Headphones\head5.jpg" style="margin:5px auto; display:block; height:200px; width:180px; transition:transform .4s; border-radius: 5px;"></a>
+				<p class="item_details_hor">Sony WH-1000XM4</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px;">Rs. 22,990</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+			</div>
+			<div id="category_item_hor">
+				<a class="cat_item_link" href="#"><img src="Images\Headphones\head6.jpg" style="margin:5px auto; display:block; height:200px; width:180px; transition:transform .4s; border-radius: 5px;"></a>
+				<p class="item_details_hor">Redgear Cloak Wired</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px;">Rs. 799</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
 			</div>
 		</div>
 
-        <div class="category_container">
-			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
-			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
-			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
-			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
-			</div>
-		</div>
+		<h2 id="category_heading">Routers</h2>
 
-        <div class="category_container">
-			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
+		<div id="category_container">
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href=#"><img src="Images\Routers\router1.jpeg" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s; border-radius: 5px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px;">D-Link DIR-650IN 300 Mbps Wireless Router</p></a>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:right; right:5%; margin-top:20px;"><strong>Rs. 899</strong></p></a><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white; float:right; right:5%;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">25% off</span></p></a>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-Type: Wireless Without Modem</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-300 Mbps Speed</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-Frequency: 2.4 GHz</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-External Antenna</p>
+				</div>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href=#"><img src="Images\Routers\router2.jpeg" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s; border-radius: 5px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px; font-size:25px;height:auto;width:60%;float:left;">TP-Link Archer A6 V3 1200 Mbps Wireless MU-MIMO Gigabit Router</p></a>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:right; margin-top:20px;width:20%;"><strong>Rs. 2,199</strong></p></a><br><br><br><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white; float:right;right:5%;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-Type: Wireless Without Modem</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-1200 Mbps Speed</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-Frequency: 2.4 GHz, 5 GHz</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-External Antenna</p>
+				</div>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href=#"><img src="Images\Routers\router3.jpeg" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s; border-radius: 5px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px; font-size:25px;height:auto;width:60%;float:left;">D-Link DIR 1260 Gigabit 1200 Mbps Wireless Router</p></a>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:right; margin-top:20px;width:20%;"><strong>Rs. 2,099</strong></p></a><br><br><br><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white; float:right;right:5%;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-Type: Wireless Without Modem</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-1200 Mbps Speed</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-Frequency: 2.4 GHz, 5 GHz</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-External Antenna</p>
+				</div>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
-			</div>
-		</div>
+		</div>	
+			<h2 id="category_heading">Speakers</h2>
 
-        <div class="category_container">
-			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
+        <div id="category_container_hor">
+			<div id="category_item_hor" style="padding-left:10px;">
+				<a class="cat_item_link" href=#"><img src="Images\Speakers\speaker1.jpeg" style="margin:5px auto; display:block; height:170px; width:150px; transition:transform .4s;"></a>
+				<p class="item_details_hor">Google Nest Mini (2nd Gen)</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px;">Rs. 2,499</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
+			<div id="category_item_hor">
+				<a class="cat_item_link" href="#"><img src="Images\Speakers\speaker2.jpeg" style="margin:5px auto; display:block; height:200px; width:200px; transition:transform .4s;"></a>
+				<p class="item_details_hor">Mivi Roam2 5 W</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px;">Rs. 899</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
+			<div id="category_item_hor">
+				<a class="cat_item_link" href="#"><img src="Images\Speakers\speaker3.jpeg" style="margin:5px auto; display:block; height:180px; width:200px; transition:transform .4s;"></a><br>
+				<p class="item_details_hor">Philips BT40 Portable</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px;">Rs. 899</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+			<div id="category_item_hor">
+				<a class="cat_item_link" href="#"><img src="Images\Speakers\speaker4.jpeg" style="margin:5px auto; display:block; height:180px; width:200px; transition:transform .4s;"></a><br>
+				<p class="item_details_hor">Boult Audio BassBox Arc</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px;">Rs. 999</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+			</div>
+			<div id="category_item_hor">
+				<a class="cat_item_link" href="#"><img src="Images\Speakers\speaker5.jpeg" style="margin:5px auto; display:block; height:200px; width:200px; transition:transform .4s;"></a>
+				<p class="item_details_hor">boAt Stone 190F</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px;">Rs. 799</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+			</div>
+			<div id="category_item_hor">
+				<a class="cat_item_link" href="#"><img src="Images\Speakers\speaker6.jpeg" style="margin:5px auto; display:block; height:150px; width:200px; transition:transform .4s;"></a><br><br><br>
+				<p class="item_details_hor">SONY SRS-XB13</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px;">Rs. 3,499</p>
+				<p class="item_details_hor" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
 			</div>
 		</div>
 
         <div id="footer">
 			<a href="categorypage3.html" style="text-decoration: none;"><div id="bar"><p style="color:#e6d5b8; font-family:century gothic; font-size:25px; text-align:center;">Back to Top</p></div></a>
+			<div id="site_details" style="margin-top:5px; float:left;position:relative;"><p class="item_details" style=" display:inline-block;color:white;">Dailyver</p></div><div id="site_details" style="margin-top:15px; margin-left:0px; float:left; position:relative;"><p class="item_details" style="font-size:15px;color:#c1c1c1;">English(IN)</p></div><br><br><br>
+			<div id="site_details" style="margin-top:5px; margin-bottom:0px; position:relative;"><p class="item_details" style="display:inline-block; color:white; font-size:12px; padding-top:0px;">Australia&nbsp;&nbsp;Brazil&nbsp;&nbsp;Canada&nbsp;&nbsp;China&nbsp;&nbsp;France&nbsp;&nbsp;Germany&nbsp;&nbsp;Italy&nbsp;&nbsp;Japan&nbsp;&nbsp;Mexico&nbsp;&nbsp;Netherlands&nbsp;&nbsp;Poland&nbsp;&nbsp;Singapore&nbsp;&nbsp;Spain&nbsp;&nbsp;Turkey&nbsp;&nbsp;United Arab Emirates&nbsp;&nbsp;United Kingdom&nbsp;&nbsp;United States</p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p class="item_details" style="display:inline-block;color:white; font-size:15px; padding-top:5px;"><i>A versatile shopping stop which completes your daily life.</i></p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p class="item_details" style="display:inline-block;color:white; font-size:12px;"><img src="Images/location-point.svg" style="height:12px; width:12px;" alt="location"> Our Head Residence: Bangalore, India</p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p class="item_details" style="display:inline-block;color:white; font-size:12px;">&copy;2002-2021 Dailyver LLC. All Rights Reserved.</p></div>
 		</div>
 	</div>
 </body>

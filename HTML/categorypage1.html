@@ -3,6 +3,21 @@
 	<title>Smartphones&Accessories</title>
 	<link rel="stylesheet" href="CSS\categorypage1-style.css">
 	<link rel="icon" href="Images\favicon.ico">
+	<script type="text/javascript">
+		var num=1;
+		function dropDown(){
+			var menu=document.getElementById('drop_down');
+			if(num==1)
+			{
+				menu.style.display="block";
+				num=0;
+			}
+			else if(num==0){
+				menu.style.display="none";
+				num=1;
+			}
+		}
+	</script>
 </head>
 <body>
 	<div id="wrapper">
@@ -11,141 +26,223 @@
 				<a id="logolink" href="index.html"><p id="logoname">Dailyver<font face="century gothic" size="2">.in</font></p></a>
 			</div>
 			<div id="search_container">
-				<form>
+				<form action="404.html">
 					<input id="searchbar" type="text" placeholder="Search">
-					<div id="searchlogo_container"><img id="searchlogo" src="Images\search.svg" align="center"></div>
+					<div id="searchlogo_container"><input type="submit" style="background-color:transparent; border:none;" value=" "></div>
 				</form>	
+
 			</div>
 			<div id="userd_container">
-				
-				<img id="usericon" src="Images\user.svg">
+				<img id="usericon" src="Images\user.svg" onclick="dropDown()">
+				<ul id="drop_down">
+					<li><a href="profile.html">View Profile</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="#">About us</a></li>
+				</ul>
 				<p id="username">Armin Arlert</p>
 			</div>
 		</div>
 		<div id="menu">
 			<p align="center" style="padding-top:3px;">
-				<a class="menu_items" href="categorypage1.html" style="background-color: #1f6f8b; color: #e6d5b8; border-radius: 5px;">Smartphones & Accessories</a>
-				<a class="menu_items" href="categorypage2.html">Home Decor</a>
+				<a class="menu_items" href="categorypage1.html" style="background-color: #E02401; color:#EBECED; border-radius:5px;">Smartphones & Accessories</a>
+				<a class="menu_items" href="categorypage2.html">Home</a>
 				<a class="menu_items" href="categorypage3.html">Electronics</a>
 				<a class="menu_items" href="categorypage4.html">Furniture</a>
 				<a class="menu_items" href="categorypage5.html">Appliances</a>
 				<a class="menu_items" href="categorypage6.html">Grocery</a>
 			</p>
 		</div>
-        <br>
         <h1 id="heading">Smartphones & Accessories</h1>
-        
-
-        <div class="category_container">
-			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
+        <h2 id="category_heading">Mid-range Devices</h2>
+		<br>
+        <div id="category_container">
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href="#"><img src="Images\Mid-range\phone1.png"style="width:150px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px;">Google Pixel 4a</p></a>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:right; right:5%; margin-top:20px;"><strong>Rs. 26,900</strong></p></a><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white; float:right; right:5%;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">25% off</span></p></a>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-6 GB RAM | 128 GB ROM</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-5.8-inch Full HD+ Display</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-12.2MP Rear Camera | 8MP Front Camera</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-4000 mAh Battery</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-Qualcomm Snapdragon 730G Processor</p>
+				</div>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href="#"><img src="Images\Mid-range\phone2.png"style="width:160px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px;">Oneplus Nord 2</p></a>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:right; right:5%; margin-top:20px;"><strong>Rs. 28,990</strong></p></a><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white; float:right; right:5%;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-8 GB RAM | 128 GB ROM</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-6.5-inch 120Hz Amoled Full HD+ Display</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-50MP Rear Camera | 32MP Front Camera</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-4500 mAh Battery</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-Mediatek Dimensity 1200-AI(5G)</p>
+				</div>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href="#"><img src="Images\Mid-range\phone3.png"style="width:150px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px;">Motorola Edge 20</p></a>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:right; right:5%; margin-top:20px;"><strong>Rs. 28,990</strong></p></a><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white; float:right; right:5%;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-8 GB RAM | 128 GB ROM</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-17.02 cm (6.7 inch) Full HD+ Display</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-144Hz Refresh Rate AMOLED Display</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-4000 mAh Battery</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-Qualcomm Snapdragon 778G Processor</p>
+				</div>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
-			</div>
-		</div>
-
-        <div class="category_container">
-			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
-			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
-			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
-			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
-			</div>
-		</div>
-
-        <div class="category_container">
-			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
-			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
-			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
-			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href="#"><img src="Images\Mid-range\phone4.png" style="width:100px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px;">Samsung Galazy A52</p></a>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:right; right:5%; margin-top:20px;"><strong>Rs. 26,990</strong></p></a><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white; float:right; right:5%;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-8 GB RAM | 128 GB ROM</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-16.40 centimeters (6.5-inch) FHD+ Super AMOLED-display</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-64MP+12MP+5MP+5MP Quad camera setup</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-4500mAH lithium-ion battery</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 720g</p>
+				</div>
 			</div>
 		</div>
-
-        <div class="category_container">
-			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
+		<h2 id="category_heading">Earphones</h2>
+        <div id="category_container">	
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href="#"><img src="Images\Earphones\earphone1.jpg" style="border-radius: 5px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px;">Jbl C100si Wired Earphones</p></a><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:left; margin-top:20px;"><strong>Rs. 599</strong></p></a><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white;float:left;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+					
+				</div>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href="#"><img src="Images\Earphones\earphone2.jpg" style="border-radius: 5px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px;">Sennheiser CX 80s Wired in Ear Earphone with Mic (Black)</p></a><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:left; margin-top:20px;"><strong>Rs. 1,149</strong></p></a><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white;float:left;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+				</div>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href="#"><img src="Images\Earphones\earphone3.jpg" style="border-radius: 5px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px;">boAt Bassheads 100 in Ear Wired Earphones</p></a><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:left; margin-top:20px;"><strong>Rs. 349</strong></p></a><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white;float:left;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+				</div>
 			</div>
-			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href="#"><img src="Images\Earphones\earphone4.jpg" style="border-radius: 5px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px;">OnePlus Bullets Wireless Z Bass Edition</p></a><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:left; margin-top:20px;"><strong>Rs. 1,799</strong></p></a><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white;float:left;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+				</div>
+			</div>
+		</div>
+		<h2 id="category_heading">SD Cards</h2>
+        <div id="category_container">
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href="#"><img src="Images\Sdcard\sdcard1.jpg" style="width:70%;height:160px;border-radius: 5px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px;">SanDisk Ultra microSD UHS-I Card 128GB</p></a><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:left; margin-top:20px;"><strong>Rs. 1,199</strong></p></a><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white;float:left;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+				</div>
+			</div>
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href="#"><img src="Images\Sdcard\sdcard2.jpg" style="width:70%;height:180px;border-radius: 5px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px;">SanDisk Ultra microSD UHS-I Card 64GB</p></a><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:left; margin-top:20px;"><strong>Rs. 549</strong></p></a><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white;float:left;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+				</div>
+			</div>
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href="#"><img src="Images\Sdcard\sdcard3.jpg" style="width:70%;height:160px;border-radius: 5px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px;">Samsung EVO Plus 64GB microSDXC UHS-I</p></a><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:left; margin-top:20px;"><strong>Rs. 649</strong></p></a><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white;float:left;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+				</div>
+			</div>
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href="#"><img src="Images\Sdcard\sdcard4.jpg" style="width:70%;height:200px;border-radius: 5px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px;">HP 32GB Class 10 MicroSD Memory Card</p></a><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:left; margin-top:20px;"><strong>Rs. 389</strong></p></a><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white;float:left;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+				</div>
+			</div>
+		</div>
+		<h2 id="category_heading">Pocket-Friendly Devices</h2>
+        <div id="category_container">
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href="#"><img src="Images\pphone\pphone1.jpg"style="width:38%;height:200px;border-radius: 5px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px;">realme 8 (Cyber Black, 128 GB) (6 GB RAM)</p></a>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:right; right:5%; margin-top:20px;"><strong>Rs. 14,990</strong></p></a><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white; float:right; right:5%;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+				</div>
+			</div>
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href="#"><img src="Images\pphone\pphone2.jpg"style="width:45%;height:200px;border-radius: 5px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px;">Samsung Galaxy M32 5G (Sky Blue, 6GB RAM, 128GB Storage)</p></a>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:right; right:5%; margin-top:20px;"><strong>Rs. 16,990</strong></p></a><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white; float:right; right:5%;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+				</div>
+			</div>
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href="#"><img src="Images\pphone\pphone3.jpg"style="width:38%;height:200px;border-radius: 5px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px;">Samsung Galaxy A12 (White, 6GB RAM, 128GB Storage)</p></a><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:right; right:5%; margin-top:20px;"><strong>Rs. 14,990</strong></p></a><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white; float:right; right:5%;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+				</div>
+			</div>
+			<div id="category_item">
+				<div id="item_left"><a class="cat_item_link" href="#"><img src="Images\pphone\pphone4.jpg"style="width:50%;height:200px;border-radius: 5px;"></a></div>
+				<div id="item_right">
+					<a class="cat_item_link" href="#"><a class="cat_item_link" href="product.html"><p class="item_details" style="padding-top: 20px;">Redmi Note 10 Lite Interstellar Black 4GB 128GB</p></a>
+					<a class="cat_item_link" href="#"><p class="item_details" style="float:right; right:5%; margin-top:20px;"><strong>Rs. 16,990</strong></p></a><br><br>
+					<a class="cat_item_link" href="#"><p class="item_details" style="font-size:15px; color:white; float:right; right:5%;"><span style="background-color: #E02401; padding:2px; border-radius:5px;">4% off</span></p></a>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+					<p class="item_details" style="font-size:20px;display:block; padding-left:0px;">-snapdragon 765g(5G hai yaar)</p>
+				</div>
 			</div>
 		</div>
 
         <div id="footer">
 			<a href="categorypage1.html" style="text-decoration: none;"><div id="bar"><p style="color:#e6d5b8; font-family:century gothic; font-size:25px; text-align:center;">Back to Top</p></div></a>
+			<div id="site_details" style="margin-top:5px; float:left;position:relative;"><p class="item_details" style=" display:inline-block;color:white;">Dailyver</p></div><div id="site_details" style="margin-top:15px; margin-left:0px; float:left; position:relative;"><p class="item_details" style="font-size:15px;color:#c1c1c1;">English(IN)</p></div><br><br><br>
+			<div id="site_details" style="margin-top:5px; margin-bottom:0px; position:relative;"><p class="item_details" style="display:inline-block; color:white; font-size:12px; padding-top:0px;">Australia&nbsp;&nbsp;Brazil&nbsp;&nbsp;Canada&nbsp;&nbsp;China&nbsp;&nbsp;France&nbsp;&nbsp;Germany&nbsp;&nbsp;Italy&nbsp;&nbsp;Japan&nbsp;&nbsp;Mexico&nbsp;&nbsp;Netherlands&nbsp;&nbsp;Poland&nbsp;&nbsp;Singapore&nbsp;&nbsp;Spain&nbsp;&nbsp;Turkey&nbsp;&nbsp;United Arab Emirates&nbsp;&nbsp;United Kingdom&nbsp;&nbsp;United States</p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p class="item_details" style="display:inline-block;color:white; font-size:15px; padding-top:5px;"><i>A versatile shopping stop which completes your daily life.</i></p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p class="item_details" style="display:inline-block;color:white; font-size:12px;"><img src="Images/location-point.svg" style="height:12px; width:12px;" alt="location"> Our Head Residence: Bangalore, India</p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p class="item_details" style="display:inline-block;color:white; font-size:12px;">&copy;2002-2021 Dailyver LLC. All Rights Reserved.</p></div>
 		</div>
 	</div>
 </body>

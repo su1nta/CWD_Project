@@ -3,6 +3,21 @@
 	<title>Appliances</title>
 	<link rel="stylesheet" href="CSS\categorypage5-style.css">
 	<link rel="icon" href="Images\favicon.ico">
+	<script type="text/javascript">
+		var num=1;
+		function dropDown(){
+			var menu=document.getElementById('drop_down');
+			if(num==1)
+			{
+				menu.style.display="block";
+				num=0;
+			}
+			else if(num==0){
+				menu.style.display="none";
+				num=1;
+			}
+		}
+	</script>
 </head>
 <body>
 	<div id="wrapper">
@@ -11,141 +26,134 @@
 				<a id="logolink" href="index.html"><p id="logoname">Dailyver<font face="century gothic" size="2">.in</font></p></a>
 			</div>
 			<div id="search_container">
-				<form>
+				<form action="404.html">
 					<input id="searchbar" type="text" placeholder="Search">
-					<div id="searchlogo_container"><img id="searchlogo" src="Images\search.svg" align="center"></div>
+					<div id="searchlogo_container"><input type="submit" style="background-color:transparent; border:none;" value=" "></div>
 				</form>	
+
 			</div>
 			<div id="userd_container">
-				
-				<img id="usericon" src="Images\user.svg">
+				<img id="usericon" src="Images\user.svg" onclick="dropDown()">
+				<ul id="drop_down">
+					<li><a href="profile.html">View Profile</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="#">About us</a></li>
+				</ul>
 				<p id="username">Armin Arlert</p>
 			</div>
 		</div>
 		<div id="menu">
 			<p align="center" style="padding-top:3px;">
 				<a class="menu_items" href="categorypage1.html">Smartphones & Accessories</a>
-				<a class="menu_items" href="categorypage2.html">Home Decor</a>
+				<a class="menu_items" href="categorypage2.html">Home</a>
 				<a class="menu_items" href="categorypage3.html">Electronics</a>
 				<a class="menu_items" href="categorypage4.html">Furniture</a>
-				<a class="menu_items" href="categorypage5.html" style="background-color: #1f6f8b; color: #e6d5b8; border-radius: 5px;">Appliances</a>
+				<a class="menu_items" href="categorypage5.html" style="background-color: #E02401; color:#EBECED; border-radius:5px;">Appliances</a>
 				<a class="menu_items" href="categorypage6.html">Grocery</a>
 			</p>
 		</div>
-        <br>
         <h1 id="heading">Appliances</h1>
-        
-
+        <br>
+		<h2 id="category_heading">Refrigerators</h2>
         <div class="category_container">
 			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
+				<a class="cat_item_link" href="#"><img src="Images\Fridges\fridge1.jpeg" style="margin:5px auto; display:block; height:200px; width:100px; transition:transform .4s;"></a>
+				<p class="item_details" style="font-size:20px;"><strong>Lloyd 587 L Frost Free Side by Side Refrigerator</strong></p>
+				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,990</p>
 			</div>
 			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
+				<a class="cat_item_link" href="#"><img src="Images\Fridges\fridge2.jpeg" style="margin:5px auto; display:block; height:200px; width:100px; transition:transform .4s;"></a>
+				<p class="item_details" style="font-size:20px;"><strong>Haier 258 L Frost Free Double Door 3 Star Convertible Refrigerator</strong></p>
+				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 22,790</p>
 			</div>
 			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
+				<a class="cat_item_link" href="#"><img src="Images\Fridges\fridge3.jpeg" style="margin:5px auto; display:block; height:200px; width:100px; transition:transform .4s;"></a>
+				<p class="item_details" style="font-size:20px;"><strong>SAMSUNG 198 L Direct Cool Single Door 4 Star Refrigerator</strong></p>
+				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 16,140</p>
 			</div>
 			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+				<a class="cat_item_link" href="#"><img src="Images\Fridges\fridge4.jpeg" style="margin:5px auto; display:block; height:200px; width:100px; transition:transform .4s;"></a>
+				<p class="item_details" style="font-size:20px;"><strong>SAMSUNG 192 L Direct Cool Single Door 2 Star Refrigerator</strong></p>
+				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 12,391</p>
 			</div>
 		</div>
-
+		<h2 id="category_heading">Air Conditioners</h2>
         <div class="category_container">
 			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
+				<a class="cat_item_link" href="#"><img src="Images\Ac\ac1.jpeg" style="margin:5px auto; margin-top:55px; display:block; height:70px; width:200px; transition:transform .4s;"></a><br><br><br><br>
+				<p class="item_details">SAMSUNG 1.5 Ton 5 Star Split Inverter AC</p>
+				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 33,990</p>
 			</div>
 			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
+				<a class="cat_item_link" href="#"><img src="Images\Ac\ac2.jpeg" style="margin:5px auto; margin-top:55px; display:block; height:70px; width:200px; transition:transform .4s;"></a><br><br><br><br>
+				<p class="item_details">Blue Star 1.5 Ton 5 Star Split Inverter AC</p>
+				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 41,490</p>
 			</div>
 			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
+				<a class="cat_item_link" href="#"><img src="Images\Ac\ac3.jpeg" style="margin:5px auto; margin-top:55px; display:block; height:70px; width:200px; transition:transform .4s;"></a><br><br>
+				<p class="item_details">LG Convertible 5-in-1 Cooling 1.5 Ton 5 Star Split Dual Inverter AC</p>
+				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 40,990</p>
 			</div>
 			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+				<a class="cat_item_link" href="#"><img src="Images\Ac\ac4.jpeg" style="margin:5px auto; margin-top:55px; display:block; height:70px; width:200px; transition:transform .4s;"></a><br><br><br><br>
+				<p class="item_details">Blue Star 0.8 Ton 3 Star Split Inverter AC</p>
+				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 25,990</p>
 			</div>
 		</div>
-
+		<h2 id="category_heading">Washing Machines</h2>
         <div class="category_container">
 			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
+				<a class="cat_item_link" href="#"><img src="Images\Wash\wash1.jpeg" style="margin:5px auto; display:block; height:200px; width:120px; transition:transform .4s;"></a><br>
+				<p class="item_details">IFB 6.5 kg 5 Star</p>
+				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 15,690</p>
 			</div>
 			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
+				<a class="cat_item_link" href="#"><img src="Images\Wash\wash2.jpeg" style="margin:5px auto; display:block; height:200px; width:120px; transition:transform .4s;"></a>
+				<p class="item_details">Whirlpool 7 kg Semi Automatic Top Load</p>
+				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 9,990</p>
 			</div>
 			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
+				<a class="cat_item_link" href="#"><img src="Images\Wash\wash3.jpeg" style="margin:5px auto; display:block; height:200px; width:120px; transition:transform .4s;"></a>
+				<p class="item_details">LG 8 kg 5 star Fully Automatic Top Load</p>
+				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 21,990</p>
 			</div>
 			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+				<a class="cat_item_link" href="#"><img src="Images\Wash\wash4.jpeg" style="margin:5px auto; display:block; height:200px; width:120px; transition:transform .4s;"></a>
+				<p class="item_details">SAMSUNG 7.2 kg Washing Machine</p>
+				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 9,690</p>
 			</div>
 		</div>
-
+		<h2 id="category_heading">Microwave Ovens</h2>
         <div class="category_container">
 			<div class="category_item" style="padding-left:10px;">
-				<a class="cat_item_link" href="product.html"><img src="Images\camerapic.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 7D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 89,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">4% off</span></p>
+				<a class="cat_item_link" href="#"><img src="Images\Micro\micro1.jpeg" style="margin:5px auto; margin-top:55px; display:block; height:120px; width:200px; transition:transform .4s;"></a><br>
+				<p class="item_details">IFB 30 L Convection Microwave Oven</p>
+				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 12,990</p>
 			</div>
 			<div class="category_item">
-				<a class="cat_item_link" href="product2.html"><img src="Images\sonyalphacam.png" style="margin:5px auto; display:block; height:200px; width:280px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha a-6000</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 58,490</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">5% off</span></p>
+				<a class="cat_item_link" href="#"><img src="Images\Micro\micro2.jpeg" style="margin:5px auto; margin-top:50px; display:block; height:120px; width:200px; transition:transform .4s;"></a>
+				<p class="item_details">SAMSUNG 23 L Baker Series Microwave Oven with Steamer Bowl</p>
+				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 9,990</p>
 			</div>
 			<div class="category_item">
-				<a class="cat_item_link" href="product3.html"><img src="Images\canoncam2.png" style="margin:5px auto; display:block; height:200px; width:250px; transition:transform .4s;"></a>
-				<p class="item_details">Canon EOS 1200D</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 44,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">15% off</span></p>
+				<a class="cat_item_link" href="#"><img src="Images\Micro\micro3.jpeg" style="margin:5px auto; margin-top:55px; display:block; height:120px; width:200px; transition:transform .4s;"></a><br>
+				<p class="item_details">IFB 23 L Convection Microwave Oven</p>
+				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 10,990</p>
 			</div>
 			<div class="category_item">
-				<a class="cat_item_link" href="product4.html"><img src="Images\sonyalphacam2.png" style="margin:5px auto; display:block; height:200px; width:260px; transition:transform .4s;"></a>
-				<p class="item_details">Sony Alpha 7R</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 2,28,990</p>
-				<p class="item_details" style="font-size:15px;padding-top:0px; color:white;"><span style="background-color: #1f6f8b; border-radius:5px; padding:2px;">2% off</span></p>
+				<a class="cat_item_link" href="#"><img src="Images\Micro\micro4.jpeg" style="margin:5px auto; margin-top:50px; display:block; height:120px; width:200px; transition:transform .4s;"></a>
+				<p class="item_details">SAMSUNG 28 L Slim Fry Convection Microwave Oven</p>
+				<p class="item_details" style="font-size:15px;padding-top:0px;">Rs. 11,590</p>
 			</div>
 		</div>
 
         <div id="footer">
 			<a href="categorypage5.html" style="text-decoration: none;"><div id="bar"><p style="color:#e6d5b8; font-family:century gothic; font-size:25px; text-align:center;">Back to Top</p></div></a>
+			<div id="site_details" style="margin-top:5px; float:left;position:relative;"><p class="item_details" style=" display:inline-block;color:white;">Dailyver</p></div><div id="site_details" style="margin-top:15px; margin-left:0px; float:left; position:relative;"><p class="item_details" style="font-size:15px;color:#c1c1c1;">English(IN)</p></div><br><br><br>
+			<div id="site_details" style="margin-top:5px; margin-bottom:0px; position:relative;"><p class="item_details" style="display:inline-block; color:white; font-size:12px; padding-top:0px;">Australia&nbsp;&nbsp;Brazil&nbsp;&nbsp;Canada&nbsp;&nbsp;China&nbsp;&nbsp;France&nbsp;&nbsp;Germany&nbsp;&nbsp;Italy&nbsp;&nbsp;Japan&nbsp;&nbsp;Mexico&nbsp;&nbsp;Netherlands&nbsp;&nbsp;Poland&nbsp;&nbsp;Singapore&nbsp;&nbsp;Spain&nbsp;&nbsp;Turkey&nbsp;&nbsp;United Arab Emirates&nbsp;&nbsp;United Kingdom&nbsp;&nbsp;United States</p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p class="item_details" style="display:inline-block;color:white; font-size:15px; padding-top:5px;"><i>A versatile shopping stop which completes your daily life.</i></p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p class="item_details" style="display:inline-block;color:white; font-size:12px;"><img src="Images/location-point.svg" style="height:12px; width:12px;" alt="location"> Our Head Residence: Bangalore, India</p></div>
+			<div id="site_details" style="margin-top:0px; position:relative;"><p class="item_details" style="display:inline-block;color:white; font-size:12px;">&copy;2002-2021 Dailyver LLC. All Rights Reserved.</p></div>
 		</div>
 	</div>
 </body>
