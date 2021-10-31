@@ -1,5 +1,19 @@
 *{margin:0px;}
 
+body::-webkit-scrollbar{
+	width:10px;
+}
+body::-webkit-scrollbar-track{
+	background: #c1c1c1;
+}
+body::-webkit-scrollbar-thumb{
+	background: grey;
+	border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover{
+	background: #090910;
+}
+
 #wrapper{
 	height:auto;
 	width:100%;
@@ -11,7 +25,7 @@
 	top:0px;
 	height:50px;
 	width:100%;
-	background:#1f6f8b;
+	background:#E02401;
 	padding-bottom:4px;
 }
 
@@ -65,6 +79,16 @@
 	height:30px;
 	width:10%;
 	position:relative;
+}
+
+#searchlogo_container input{
+	display: block;
+	height:30px;
+	width:100%;
+	background-image: url("search.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
 }
 
 #searchlogo{
@@ -122,7 +146,7 @@
 	color:#EBECED;
 }
 #usericon:hover{
-	background:#e6d5b8;
+	background:#F78812;
 }
 
 #drop_down li a{
@@ -141,15 +165,13 @@
 #menu{
 	display:block;
 	position:relative;
-	margin-top:5px;
+	margin-top:0px;
 	top:0;
 	height:30px;
 	width:100%;
-	background: #e6d5b8;
+	background: #F78812;
 	<--box-shadow:0px 2px 35px;-->
 }
-
-
 
 .menu_items{
 	text-decoration:none;
@@ -158,14 +180,14 @@
 	font-size:20px; 
 	letter-spacing:2px;
 	color:#1C2B2D;
-	padding:2px 4px;
+	padding:1px 4px;
 	margin:0px 10px;
 	transition:.4s;
 }
 
 #menu a:hover{
-	color:#e6d5b8;
-	background-color:#1f6f8b;
+	color:#EBECED;
+	background-color:#E02401;
 	<--background-image:linear-gradient(90deg,#1f6f8b,#1C2B2D);-->
 }
 
@@ -209,7 +231,7 @@
 	width:30px;
 }
 
-.category_container{
+#category_container{
 	display:flex;
 	margin:5px auto;
 	max-height:330px;
@@ -219,14 +241,23 @@
 	padding:5px;
 }
 
-#category_container{
-	display:flex;
-	margin:5px auto;
-	max-height:330px;
-	width:75%;
-	overflow-x:scroll;
-	overflow-y:hidden;
-	padding:5px;
+#category_container::-webkit-scrollbar{
+	height:10px;
+	transition:transform .2s;
+}
+
+#category_container::-webkit-scrollbar-track{
+	background:whitesmoke;
+	border-radius: 10px;
+}
+
+#category_container::-webkit-scrollbar-thumb{
+	background:#c1c1c1;
+	border-radius:10px;
+}
+
+#category_container::-webkit-scrollbar-thumb:hover{
+	background:#090910;
 }
 
 .category_item{
@@ -279,8 +310,8 @@
 #bar{
 	top:0;
 	height:30px;
-	background-color: #1f6f8b;
-	box-shadow: 0px 10px 20px black;
+	background-color: #E02401;
+	box-shadow: 0px 10px 20px #090910;
 }
 
 
@@ -289,5 +320,12 @@
 	margin:0px auto;
 	height:200px;
 	width:100%;
-	background-color: #1C2B2D;
+	background-color: #51050F;
+}
+
+#site_details{
+	display:inline-block;
+	margin:0px 5px;
+	padding:2px;
+	display:block;
 }

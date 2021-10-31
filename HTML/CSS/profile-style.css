@@ -12,10 +12,11 @@ body::-webkit-scrollbar-thumb{
 body::-webkit-scrollbar-thumb:hover{
 	background: #090910;
 }
+
 #wrapper{
 	height:auto;
 	width:100%;
-	background-color:#EBECED;
+	background-color:whitesmoke;
 }
 
 #header{
@@ -57,46 +58,17 @@ body::-webkit-scrollbar-thumb:hover{
 	position:relative; 
 }
 
-#searchbar{
-	border: 2px solid white;
-	background-color:transparent;
-	height:30px;
-	width:90%;
+#heading{
+    display:block;
+    margin:0px auto;
 }
 
-::placeholder{
-	font-family:century gothic;
-	color:white;
-	padding-left:5px;
-}
-
-#searchlogo_container{
-	display:block;
-	float:right;
-	background:white;
-	height:30px;
-	width:10%;
-	position:relative;
-}
-
-#searchlogo_container input{
-	display: block;
-	height:30px;
-	width:100%;
-	background-image: url("search.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-	cursor: pointer;
-}
-
-#searchlogo{
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-	padding-top:3px;
-	cursor:pointer;
-	height:25px;
-	width:25px;
+#heading p{
+    display:block;
+    margin-left:41%;
+    font-family: century gothic;
+    font-size:25px;
+    color:white;
 }
 
 #header #userd_container{
@@ -191,91 +163,104 @@ body::-webkit-scrollbar-thumb:hover{
 	<--background-image:linear-gradient(90deg,#1f6f8b,#1C2B2D);-->
 }
 
-#pro_details_container{
-	margin: 50px auto;
-	height:1500px;
-	width:75%;
-}
-
-#pro_image{
-	float:left;
-	height:450px;
-	width:30%;
-}
-
-#pro_image img{
-	display:block;
-	padding-top:40px;
-	height:340px;
-	width:70%;
-	margin:0px auto;
-}
-
-#pro_details{
-	height:auto;
-	width:70%;
-	float:left;
-}
-
-#pro_details p{
-	font-family: century gothic;
-	font-size:15px;
-	padding-left:10px;
-}
-
-#order{
-	margin:0px;
-}
-
-#ordernow{
-	display: inline-block;
-	height:40px;
-	margin:0px;
-	width:150px;
-	border-radius:20px;
-	background-color: #E02401;
-	transition:.2s;
-}
-
-#orderfont
-{
-	color:#1C2B2D;
-}
-
-#order:hover #ordernow{
-	background-color: #51050F;
-}
-
-#order:hover #orderfont{
-	color:#EBECED;
-}
-
-#pro_details td{
-	border:2px #1C2B2D;
-	border-style: none none solid none;
-	font-family:century gothic;
-	font-size:15px;
-}
-
 #details{
-	display:block;
-	font-size:10px;
-	margin:0px auto;
-	max-width:70px;
-	text-align: center;
-}
-
-#about-heading{
-	font-family:century gothic;
-}
-
-#spec{
     display:block;
-    margin-left:auto;
-    margin-right:auto;
-    height:200px;
-    width:370px;
+    margin:0px auto;
+    height:650px;
+    width:80%;
 }
+
+#left_details{
+    height:auto;
+    display:block;
+    float:left;
+}
+
+#left_details img{
+    display:block;
+    border:2px dotted #F78812;
+    border-radius: 50%;
+    height:250px;
+    width:250px;
+    margin-top:50px;
+}
+
+#left_details span{
+    display:block;
+    font-family:century gothic;
+    font-size:35px;
+    color:#51050F;
+}
+
+#right_details{
+    display:block;
+    float:left;
+    height:350px;
+    width: 40%;
+    background-color: whitesmoke;
+    border:2px solid #c1c1c1;
+    margin-top:50px;
+    margin-left:20px;
+    border-radius:5px;
+}
+
+#right_details #orders{
+    left:1%;
+    margin:10px;
+    position:relative;
+    display:block;
+    width:45%;
+    float:left;
+    height:150px;
+    background-color: white;
+    border: 2px dashed #c1c1c1;
+    border-radius:5px;
+    transition:.4s;
+}
+
+#right_details #orders:hover{
+    background-color: whitesmoke;
+    border:2px solid #c1c1c1;
+}
+
+#right_details img{
+    display:block;
+    margin:10px;
+    float:left;
+    height:50px;
+    width:50px;
+    transition:transform .4s;
+}
+
+#right_details img:hover{
+    transform: scale(1.1);
+}
+
+#right_details span{
+    display:inline-block;
+    font-family:century gothic;
+    font-size:17px;
+    color:#51050F;
+    transition:transform .4s;
+}
+
+#right_details #orders a{
+    text-decoration:none;
+}
+
+#right_details hr{
+    width:90%;
+    display:block;
+    margin:0px auto;
+}
+
+#bar{
+	top:0;
+	height:4px;
+	background-color: #E02401;
+	box-shadow: 0px 10px 20px #090910;
+}
+
 .item_details{
 	font-family:century gothic;
 	font-size:25px;
@@ -283,16 +268,11 @@ body::-webkit-scrollbar-thumb:hover{
 	text-align:left;
 	padding:10px 0px 0px 10px;
 }
-#bar{
-	top:0;
-	height:30px;
-	background-color: #E02401;
-	box-shadow: 0px 10px 20px #090910;
-}
-
 
 #footer{
 	display:block;
+    position:absolute;
+    bottom:0;
 	margin:0px auto;
 	height:200px;
 	width:100%;

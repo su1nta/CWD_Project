@@ -1,17 +1,5 @@
 *{margin:0px;}
-body::-webkit-scrollbar{
-	width:10px;
-}
-body::-webkit-scrollbar-track{
-	background: #c1c1c1;
-}
-body::-webkit-scrollbar-thumb{
-	background: grey;
-	border-radius: 10px;
-}
-body::-webkit-scrollbar-thumb:hover{
-	background: #090910;
-}
+
 #wrapper{
 	height:auto;
 	width:100%;
@@ -31,7 +19,7 @@ body::-webkit-scrollbar-thumb:hover{
 	float:left;
 	display:block;
 	height:50px;
-	width:30%;
+	width:9%;
 }
 
 #logoname{
@@ -46,6 +34,7 @@ body::-webkit-scrollbar-thumb:hover{
 
 #logolink{
 	text-decoration:none;
+	color:white;
 }
 
 #header #search_container{
@@ -171,8 +160,6 @@ body::-webkit-scrollbar-thumb:hover{
 	<--box-shadow:0px 2px 35px;-->
 }
 
-
-
 .menu_items{
 	text-decoration:none;
 	font-family:century gothic;
@@ -191,91 +178,21 @@ body::-webkit-scrollbar-thumb:hover{
 	<--background-image:linear-gradient(90deg,#1f6f8b,#1C2B2D);-->
 }
 
-#pro_details_container{
-	margin: 50px auto;
-	height:1500px;
-	width:75%;
-}
-
-#pro_image{
+#heading{
+	color:white;
 	float:left;
-	height:450px;
-	width:30%;
-}
-
-#pro_image img{
-	display:block;
-	padding-top:40px;
-	height:340px;
-	width:70%;
-	margin:0px auto;
-}
-
-#pro_details{
-	height:auto;
-	width:70%;
-	float:left;
-}
-
-#pro_details p{
-	font-family: century gothic;
-	font-size:15px;
-	padding-left:10px;
-}
-
-#order{
-	margin:0px;
-}
-
-#ordernow{
-	display: inline-block;
-	height:40px;
-	margin:0px;
-	width:150px;
-	border-radius:20px;
-	background-color: #E02401;
-	transition:.2s;
-}
-
-#orderfont
-{
-	color:#1C2B2D;
-}
-
-#order:hover #ordernow{
-	background-color: #51050F;
-}
-
-#order:hover #orderfont{
-	color:#EBECED;
-}
-
-#pro_details td{
-	border:2px #1C2B2D;
-	border-style: none none solid none;
+	width:61%;
 	font-family:century gothic;
-	font-size:15px;
+	font-size:25px;
+	padding-top:11px;
 }
 
-#details{
+#heading p{
 	display:block;
-	font-size:10px;
-	margin:0px auto;
-	max-width:70px;
-	text-align: center;
+	position:absolute;
+	left:47%;
 }
 
-#about-heading{
-	font-family:century gothic;
-}
-
-#spec{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    height:200px;
-    width:370px;
-}
 .item_details{
 	font-family:century gothic;
 	font-size:25px;
@@ -283,6 +200,7 @@ body::-webkit-scrollbar-thumb:hover{
 	text-align:left;
 	padding:10px 0px 0px 10px;
 }
+
 #bar{
 	top:0;
 	height:30px;
